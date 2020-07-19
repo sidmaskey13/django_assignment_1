@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'blog/base.html' %}
+{% block content %}
 <h1>Welcome to my blog</h1>
-<h5><a href="blog/">Go to Blogs!!!</a></h5>
-</body>
-</html>
+<h5><a href="{% url 'blog:index' %}">Go to Blogs!!!</a></h5>
+{% endblock %}
